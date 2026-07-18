@@ -151,5 +151,77 @@ const ATTRACTIONS = [
     category: "nature",
     lat: 39.9765, lng: -74.1310,
     desc: "A tranquil nature preserve on Barnegat Bay with salt marsh boardwalks, forest trails, and a nature center — great for birdwatching."
+  },
+  {
+    name: "High Point State Park",
+    category: "nature",
+    lat: 41.3223, lng: -74.6607,
+    desc: "Home to the highest point in New Jersey, marked by a 220-foot obelisk monument with panoramic views over three states."
+  },
+  {
+    name: "Wharton State Forest",
+    category: "nature",
+    lat: 39.6473, lng: -74.6455,
+    desc: "The largest tract of land in the NJ state park system, deep in the Pine Barrens, with the restored 19th-century village of Batsto."
+  },
+  {
+    name: "Stokes State Forest",
+    category: "nature",
+    lat: 41.1907, lng: -74.7607,
+    desc: "Over 16,000 acres of Kittatinny Ridge woodland with hiking trails, waterfalls, and a stretch of the Appalachian Trail."
+  },
+  {
+    name: "Island Beach State Park",
+    category: "nature",
+    lat: 39.8087, lng: -74.0876,
+    desc: "One of the last undeveloped barrier islands on the Jersey Shore, with pristine dunes, surf fishing, and rich maritime wildlife."
+  },
+  {
+    name: "Ramapo Mountain State Forest",
+    category: "nature",
+    lat: 41.0453, lng: -74.2593,
+    desc: "Rugged, rocky trails through the Ramapo Mountains leading to scenic overlooks and Ramapo Lake, popular with hikers and mountain bikers."
+  },
+  {
+    name: "Cheesequake State Park",
+    category: "nature",
+    lat: 40.4415, lng: -74.2513,
+    desc: "A unique meeting point of northern and southern ecosystems, with salt marsh, pine barrens, and hardwood forest trails near Raritan Bay."
+  },
+  {
+    name: "Round Valley Recreation Area",
+    category: "nature",
+    lat: 40.5678, lng: -74.8393,
+    desc: "New Jersey's deepest reservoir, surrounded by wooded trails, swimming coves, and backcountry campsites accessible only by boat or foot."
+  },
+  {
+    name: "Voorhees State Park",
+    category: "nature",
+    lat: 40.6987, lng: -74.8129,
+    desc: "Hilltop park in Hunterdon County with an observatory, wildflower trails, and views over the surrounding farmland valleys."
+  },
+  {
+    name: "Hacklebarney State Park",
+    category: "nature",
+    lat: 40.7365, lng: -74.7871,
+    desc: "Often called one of NJ's most beautiful parks, with the Black River tumbling over rocks through a steep, wooded gorge."
+  },
+  {
+    name: "Washington Crossing State Park",
+    category: "history",
+    lat: 40.2965, lng: -74.8712,
+    desc: "Marks the site where George Washington crossed the Delaware River in 1776, with a visitor center, historic buildings, and river trails."
+  },
+  {
+    name: "Allaire State Park",
+    category: "history",
+    lat: 40.1290, lng: -74.1265,
+    desc: "Features the Historic Village at Allaire, a restored 19th-century ironmaking community, plus trails along the Manasquan River and a steam railway."
+  },
+  {
+    name: "Jenny Jump State Forest",
+    category: "nature",
+    lat: 40.9153, lng: -74.9296,
+    desc: "A quiet ridge-top forest in Warren County with rocky overlooks of the Great Meadows valley and one of NJ's few public astronomical observatories."
   }
 ];
