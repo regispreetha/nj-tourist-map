@@ -65,6 +65,18 @@ const searchInput = document.getElementById("searchInput");
 const filterChips = document.getElementById("filterChips");
 const sidebar = document.getElementById("sidebar");
 const toggleSidebarBtn = document.getElementById("toggleSidebar");
+const closeSidebarBtn = document.getElementById("closeSidebar");
+const sidebarBackdrop = document.getElementById("sidebarBackdrop");
+
+function openSidebar() {
+  sidebar.classList.add("open");
+  sidebarBackdrop.classList.add("visible");
+}
+
+function closeSidebar() {
+  sidebar.classList.remove("open");
+  sidebarBackdrop.classList.remove("visible");
+}
 
 function render() {
   const q = state.query.trim().toLowerCase();
@@ -122,7 +134,7 @@ function selectPlace(idx, { flyToOnMap }) {
   render();
 
   if (window.innerWidth <= 860) {
-    sidebar.classList.remove("open");
+    closeSidebar();
   }
 }
 
@@ -141,7 +153,14 @@ filterChips.addEventListener("click", (e) => {
 });
 
 toggleSidebarBtn.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
+  if (sidebar.classList.contains("open")) {
+    closeSidebar();
+  } else {
+    openSidebar();
+  }
 });
+
+closeSidebarBtn.addEventListener("click", closeSidebar);
+sidebarBackdrop.addEventListener("click", closeSidebar);
 
 render();

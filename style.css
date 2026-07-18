@@ -113,7 +113,15 @@ a { color: var(--brand-dark); }
   border-bottom: 1px solid var(--line);
 }
 
+.sidebar-top-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 #searchInput {
+  flex: 1;
+  min-width: 0;
   width: 100%;
   padding: 10px 14px;
   border-radius: 10px;
@@ -127,6 +135,25 @@ a { color: var(--brand-dark); }
 
 #searchInput:focus {
   border-color: var(--brand);
+}
+
+.close-sidebar {
+  display: none;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1.5px solid var(--line);
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sidebar-backdrop {
+  display: none;
 }
 
 .filter-chips {
@@ -311,6 +338,26 @@ a { color: var(--brand-dark); }
 
   .sidebar.open {
     transform: translateX(0);
+  }
+
+  .close-sidebar {
+    display: flex;
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: rgba(20, 43, 37, 0.4);
+    z-index: 14;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .sidebar-backdrop.visible {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .brand-text p { display: none; }
