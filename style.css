@@ -236,6 +236,7 @@ a { color: var(--brand-dark); }
   flex: 1;
   position: relative;
   min-height: 0;
+  isolation: isolate;
 }
 
 #map {
