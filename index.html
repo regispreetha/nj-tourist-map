@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Explore New Jersey — Interactive Tourist Map</title>
+<meta name="description" content="An interactive map of New Jersey's best tourist attractions, beaches, historic sites, and family fun." />
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark">🌊</span>
+      <div class="brand-text">
+        <h1>Explore New Jersey</h1>
+        <p>An interactive guide to the Garden State's best spots</p>
+      </div>
+    </div>
+    <button id="toggleSidebar" class="toggle-sidebar" aria-label="Toggle list view">☰ Attractions</button>
+  </div>
+</header>
+
+<main class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <input type="search" id="searchInput" placeholder="Search attractions..." aria-label="Search attractions" />
+      <div class="filter-chips" id="filterChips">
+        <button class="chip active" data-cat="all">All</button>
+        <button class="chip" data-cat="beach">🏖️ Beach</button>
+        <button class="chip" data-cat="history">🏛️ History</button>
+        <button class="chip" data-cat="family">🎡 Family</button>
+        <button class="chip" data-cat="nature">🌲 Nature</button>
+        <button class="chip" data-cat="culture">🎨 Culture</button>
+      </div>
+    </div>
+    <div class="card-list" id="cardList"></div>
+  </aside>
+
+  <div class="map-wrap">
+    <div id="map"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Made for exploring New Jersey · Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="attractions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
