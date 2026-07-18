@@ -2,6 +2,7 @@ const CATEGORY_META = {
   beach:   { label: "Beach",   color: "#1f8fb0", emoji: "🏖️" },
   history: { label: "History", color: "#8a5a2b", emoji: "🏛️" },
   family:  { label: "Family",  color: "#d3592a", emoji: "🎡" },
+  kids:    { label: "Kids",    color: "#c99a1f", emoji: "🧒" },
   nature:  { label: "Nature",  color: "#2f8f4e", emoji: "🌲" },
   culture: { label: "Culture", color: "#7548a6", emoji: "🎨" }
 };

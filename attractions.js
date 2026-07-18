@@ -223,5 +223,29 @@ const ATTRACTIONS = [
     category: "nature",
     lat: 40.9153, lng: -74.9296,
     desc: "A quiet ridge-top forest in Warren County with rocky overlooks of the Great Meadows valley and one of NJ's few public astronomical observatories."
+  },
+  {
+    name: "Diggerland USA",
+    category: "kids",
+    lat: 39.7801, lng: -74.9107,
+    desc: "The only construction-themed adventure park in the U.S., where kids can drive real (modified) excavators, diggers, and dump trucks."
+  },
+  {
+    name: "Storybook Land",
+    category: "kids",
+    lat: 39.3928, lng: -74.5729,
+    desc: "A gentle, old-fashioned theme park in Egg Harbor Township built around nursery rhyme and fairy tale sets, sized for young children."
+  },
+  {
+    name: "Turtle Back Zoo",
+    category: "kids",
+    lat: 40.7909, lng: -74.2668,
+    desc: "A West Orange zoo with over 500 animals, a treetop adventure course, carousel, and one of the region's best kid-friendly outings."
+  },
+  {
+    name: "Cape May County Park & Zoo",
+    category: "kids",
+    lat: 39.0817, lng: -74.8323,
+    desc: "A free, sprawling zoo in Cape May Court House with giraffes, big cats, and a large playground — a favorite low-cost family stop."
   }
 ];

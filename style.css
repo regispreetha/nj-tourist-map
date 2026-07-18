@@ -11,6 +11,7 @@
   --beach: #1f8fb0;
   --history: #8a5a2b;
   --family: #d3592a;
+  --kids: #c99a1f;
   --nature: #2f8f4e;
   --culture: #7548a6;
   --shadow: 0 8px 24px rgba(20, 43, 37, 0.12);
@@ -283,6 +284,7 @@ a { color: var(--brand-dark); }
 .tag-beach { background: #dff3f8; color: var(--beach); }
 .tag-history { background: #f1e6d8; color: var(--history); }
 .tag-family { background: #fbe0d3; color: var(--family); }
+.tag-kids { background: #faf0d1; color: var(--kids); }
 .tag-nature { background: #e1f3e5; color: var(--nature); }
 .tag-culture { background: #ece2f6; color: var(--culture); }
 
